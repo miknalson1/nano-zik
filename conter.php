@@ -1,12 +1,12 @@
 <?php
     header('Access-Control-Allow-Origin:*');
-    $nom="";
+    $nom="Sia ---T-Zik_nano.mp3";
     $zero=0;
     try
     {
        $bdd = new PDO('mysql:host=localhost;dbname=conter','root','');
        
-       /*$ins="INSERT INTO files(file_name,downloads)
+      /* $ins="INSERT INTO files(file_name,downloads)
        VALUES('$nom','$zero')";
        
        $bdd ->exec($ins);*/

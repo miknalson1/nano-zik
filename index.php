@@ -21,16 +21,20 @@
         <section class="cendre">
             <h1>Bienvenue sur T - Zik_nano</h1>
             <div class="sec">
-                <div class="left">
-                    
+                <div>
+                <center><h3>Bienvenue à vous sur le " T-Zik_nano!!! "<br><br>Vous venez d'entrer dans le monde de la music et vous
+                voulez que votre morceau soit écouté par la majorité n’excite pas à cliquer sur
+                «contactez-moi» et me joindre sur mes coordonnés </h3></center>
                 </div>
-                <div class="right">
-                    
+                <div>
+                    <center><h3>Comment seront présentés vos tubes !!!<br><br>
+                    Je vous invite à cliquer sur le menu «news tubes» pour voir un exemple merci…
+                    </h3></center>
                 </div>
             </div>
         </section>
         
-        <section class="bleue">
+        <!--<section class="bleue">
             <h1>La Une !</h1>
             <div class="sec">
                 <div class="left">
@@ -40,7 +44,7 @@
 
                 </div>
             </div>
-        </section>
+        </section>-->
         
         <!--pied-->
         <?php

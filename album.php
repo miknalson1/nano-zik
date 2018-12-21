@@ -20,7 +20,7 @@
         
         <section class="verte" id="album">
             <h1>Nada</h1>
-            <p>Cliquez sur les titres pour lancer le téléchargement !</p>
+            <!--<p>Cliquez sur les titres pour lancer le téléchargement !</p>-->
             <div class="sec">
                 <div class="cright"><!--tof w-h 200px-->
 

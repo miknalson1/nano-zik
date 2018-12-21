@@ -1,13 +1,17 @@
 <?php 
         header('Access-Control-Allow-Origin:*');
-        try
-        {
-           $bdd = new PDO('mysql:host=localhost;dbname=conter','root','');
-        }
-        catch(Exception $e)
-        {
-           die('Erreur : '.$e->getMessage());
-        }
+            $serveur="localhost";
+            $login="root";
+            $pass="";
+            try
+            {
+               $bdd = new PDO("mysql:host=$serveur;dbname=conter",$login,$pass);
+               
+            }
+            catch(Exception $e)
+            {
+               die('Erreur : '.$e->getMessage());
+            }
 
         function afficherNombreDeTelechargements($id_fichier){
             global $bdd;
@@ -58,13 +62,14 @@
             <div class="sec">
                 <div class="left">
                     <?php $f14= afficherNombreDeTelechargements(14); ?>
-                     <p><a href="conter.php?f=14"><img title="télécharger" src="doc/img/ipdf.png" alt="Sia" width="200px" height="200px" ></a><br>
-                    <?php echo $f14['downloads'].' téléchargements'?></p>
+                     <p><a href="conter.php?f=14"><img title="télécharger" src="doc/img/gif1.gif" alt="T-Zik" width="200px" height="200px" ></a><br></p>
+                    
                 </div>
                 <div class="right">
-                    <p>Le new singel de sia</p>
-                    <p>Titre : <strong>My life</strong></p>
-                    <p><strong>N'hésitez pas à cliquez sur l'image pour lancer le téléchargement</strong></p><br>
+                    <h3>Sia feat Kendrick Lamar</h3>
+                    <p>Titre : <strong>The greatest</strong></p>
+                    <h3><?php echo $f14['downloads'].' téléchargements'?></h3>
+                    <p>N'hésitez pas à cliquez sur l'image pour lancer le téléchargement</p><br>
                 </div>
                 <audio controls="controls" loop="loop">
                         <source src="fichiers/Sia ---T-Zik_nano.mp3"></source>
@@ -73,26 +78,26 @@
         </section>
         <!-- Fin -->
         
-        <section class="verte">
-            <h1>Damso</h1>
+        <!--<section class="verte">
+            <h1></h1>
             <div class="sec">
                 <div class="left">
                     <?php $f13= afficherNombreDeTelechargements(13); ?>
-                     <p><a href="conter.php?f=13"><img title="télécharger" src="doc/img/ipdf.png" alt="Sia" width="200px" height="200px" ></a><br>
+                     <p><a href="conter.php?f=13"><img title="télécharger" src="doc/img/gif1.gif" alt="T-Zik" width="200px" height="200px" ></a><br>
                     <?php echo $f13['downloads'].' téléchargements'?></p>
                 </div>
                 <div class="right">
-                    <div class="right">
-                    <p>Le new singel de Damso</p>
-                    <p>Titre : <strong>debroullard</strong></p>
-                    <p><strong>N'hésitez pas à cliquez sur l'image pour lancer le téléchargement</strong></p><br>
+                    <h3></h3>
+                    <p>Titre : <strong></strong></p>
+                    <h3><?php echo $f14['downloads'].' téléchargements'?></h3>
+                    <p>N'hésitez pas à cliquez sur l'image pour lancer le téléchargement</p><br>
                 </div>
                     <audio controls="controls" loop="loop">
-                        <source src="fichiers/Damso-debrouillard---T-Zik_nano.mp3"></source>
+                        <source src="fichiers/.mp3"></source>
                     </audio>
                 </div>
             </div>
-        </section>
+        </section> -->
         
         <!--pied-->
         <?php
